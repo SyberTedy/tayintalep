@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
@@ -225,13 +225,13 @@ namespace TayinProgrami.WebAPI.Controllers
 
             if (!await _permissionService.UserHasPermissionsAsync(User, "Admin", "TransferRequest.UpdateApproveStatus")) return Unauthorized();
 
-            var userId = int.Parse(User.FindFirstValue("Id"));
-            var user = await _context.User.FindAsync(userId);
+            var adminId = int.Parse(User.FindFirstValue("Id"));
             var transferRequest = await _context.TransferRequest.FindAsync(id);
+            var user = await _context.User.FindAsync(transferRequest.UserId);
 
             if (transferRequest == null) return NotFound("transfer request not found");
 
-            if (transferRequest.UserId == userId) return Forbid("you cant update your own transfer request");
+            if (transferRequest.UserId == adminId) return Forbid("you cant update your own transfer request");
 
             // Sadece Onaylanması ve reddedilmesi durumlarını açık bıraktım
             if (dto.StatuId != 2 && dto.StatuId != 3 ) return BadRequest("Invalid ApprovedStatus value");
@@ -257,7 +257,7 @@ namespace TayinProgrami.WebAPI.Controllers
                     user.ActiveCourthouseId = _context.CourthousePreference.Find(dto.ApprovedCourthousePreferenceId).CourthouseId;
 
                     var otherPendingRequests = await _context.TransferRequest
-                    .Where(tr => tr.UserId == userId && tr.Id != id && tr.StatuId == 1)
+                    .Where(tr => tr.UserId == user.Id && tr.Id != id && tr.StatuId == 1)
                     .ToListAsync();
 
                     foreach (var req in otherPendingRequests)
