@@ -71,16 +71,18 @@ tarayıcınızda "http://localhost:5173/" bağlantısı üzerinden ilerleyebilir
 
 🔑 Varsayılan Giriş Bilgileri (Demo)
 
-Sicil	     Şifre
-AB121323     121323Sifre!
-AB323121     323121Sifre!
-AB221332     221332Sifre!
-AB211322     211322Sifre!
-AB267167     267167Sifre!
-AB189289     189289Sifre!
-AB176287     176287Sifre!
-AB213312     213312Sifre!
-AB98456      98456Sifre!
+
+| Sicil     | Şifre          |
+|-----------|----------------|
+| AB121323  | 121323Sifre!   |
+| AB323121  | 323121Sifre!   |
+| AB221332  | 221332Sifre!   |
+| AB211322  | 211322Sifre!   |
+| AB267167  | 267167Sifre!   |
+| AB189289  | 189289Sifre!   |
+| AB176287  | 176287Sifre!   |
+| AB213312  | 213312Sifre!   |
+| AB98456   | 98456Sifre! *(yetkili hesap)* |
 
 Şifreler bcrypt ile güvenli bir şekilde hashlenerek veritabanında saklanmaktadır 
 
