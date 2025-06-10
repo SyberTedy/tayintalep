@@ -47,7 +47,7 @@
 ### 1. Projeyi Klonlayın
 
 bash
-git clone https://github.com/devrimdeniz/tayin-talep.git
+git clone https://github.com/devrimdeniz/tayintalep.git
 
 2. Veri tabanı ve örnek verileri oluşturun ve diğer kurulum işlemleri
 
