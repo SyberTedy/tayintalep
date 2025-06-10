@@ -1,0 +1,324 @@
+[
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "TayinProgrami.Models.Dtos.UserLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.CourthouseController",
+    "Method": "GetAll",
+    "RelativePath": "api/Courthouse",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.CourthouseController",
+    "Method": "Create",
+    "RelativePath": "api/Courthouse",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courthouse",
+        "Type": "TayinProgrami.Models.Entities.Courthouse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.LogEntryController",
+    "Method": "GetAll",
+    "RelativePath": "api/LogEntry",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.PermissionController",
+    "Method": "GetAll",
+    "RelativePath": "api/Permission",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.PermissionController",
+    "Method": "CheckPermission",
+    "RelativePath": "api/Permission/permcheck",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "permissionNames",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TitleController",
+    "Method": "GetAll",
+    "RelativePath": "api/Title",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TitleController",
+    "Method": "Create",
+    "RelativePath": "api/Title",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "TayinProgrami.Models.Entities.Title",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestController",
+    "Method": "Create",
+    "RelativePath": "api/TransferRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PreferenceIds",
+        "Type": "System.Int32[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Sources",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestController",
+    "Method": "CancelRequest",
+    "RelativePath": "api/TransferRequest/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestController",
+    "Method": "GetById",
+    "RelativePath": "api/TransferRequest/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestController",
+    "Method": "UpdateApproveStatus",
+    "RelativePath": "api/TransferRequest/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "TayinProgrami.Models.Dtos.UpdateTransferRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestController",
+    "Method": "GetAll",
+    "RelativePath": "api/TransferRequest/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestController",
+    "Method": "GetMine",
+    "RelativePath": "api/TransferRequest/mine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestStatuController",
+    "Method": "GetAll",
+    "RelativePath": "api/TransferRequestStatu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestTypeController",
+    "Method": "GetAll",
+    "RelativePath": "api/TransferRequestType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.TransferRequestTypeController",
+    "Method": "Create",
+    "RelativePath": "api/TransferRequestType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "TayinProgrami.Models.Entities.TransferRequestType",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.UserController",
+    "Method": "GetAll",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.UserController",
+    "Method": "Get",
+    "RelativePath": "api/User/mine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "api/User/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "TayinProgrami.Models.Dtos.UserRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.UserPermissionClaimController",
+    "Method": "GetAll",
+    "RelativePath": "api/UserPermissionClaim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.UserPermissionClaimController",
+    "Method": "Create",
+    "RelativePath": "api/UserPermissionClaim",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userPermissionClaim",
+        "Type": "TayinProgrami.Models.Entities.UserPermissionClaim",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TayinProgrami.WebAPI.Controllers.UserPermissionClaimController",
+    "Method": "Delete",
+    "RelativePath": "api/UserPermissionClaim/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

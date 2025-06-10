@@ -1,0 +1,17 @@
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\syber\source\repos\TayinProgrami\Business\bin\Debug\net8.0\Business.deps.json
+C:\Users\syber\source\repos\TayinProgrami\Business\bin\Debug\net8.0\Business.dll
+C:\Users\syber\source\repos\TayinProgrami\Business\bin\Debug\net8.0\Business.pdb
+C:\Users\syber\source\repos\TayinProgrami\Business\bin\Debug\net8.0\DataAccess.dll
+C:\Users\syber\source\repos\TayinProgrami\Business\bin\Debug\net8.0\Models.dll
+C:\Users\syber\source\repos\TayinProgrami\Business\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\syber\source\repos\TayinProgrami\Business\bin\Debug\net8.0\Models.pdb
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\Business.dll
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\refint\Business.dll
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\Business.pdb
+C:\Users\syber\source\repos\TayinProgrami\Business\obj\Debug\net8.0\ref\Business.dll
