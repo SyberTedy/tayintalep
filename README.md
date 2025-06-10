@@ -64,7 +64,9 @@ Sıfırlamak isterseniz queryi tekrar çalıştırabilirsiniz.
 bash
 Start.bat
 
+4. Artık projeyi inceleyebilirsini
 
+tarayıcınızda "http://localhost:5173/" bağlantısı üzerinden ilerleyebilirsiniz
 ---
 
 🔑 Varsayılan Giriş Bilgileri (Demo)
