@@ -1,4 +1,4 @@
-IF EXISTS (SELECT name FROM sys.databases WHERE name = 'TransferRequestAppDB')
+﻿IF EXISTS (SELECT name FROM sys.databases WHERE name = 'TransferRequestAppDB')
 BEGIN
     DROP DATABASE TransferRequestAppDB;
 END
@@ -105,10 +105,6 @@ VALUES
 ('21331221331', 213312, 'Ahmet', 'Demir', 'ahmet.demir@example.com', '5558889900', 3, '$2a$11$Bdta0K48cJ1C4cssIYeaMukUav7eUHmae01jLoWBUfj3ovznhYVVu', 48, @NowTurkeyTime),
 ('98456984569',  98456,  'Sinan', 'Yurtsever', 'sinan.yurtsever@example.com', '5559990011', 6, '$2a$11$lcbZLTAJMDbsaXO49dGlf.4M6MNuesyCYXLPO.Y1Ev9XBPxBlzz1G', 36, @NowTurkeyTime);
 
--- sorguyu çalıştrdığımda dosya UTF-8 (Without BOM) tipinde okunmasına ve Turkish_CI_AS tipinde collate etmeme ramen türkçe karakterleri 
--- kabul etmedi çözemedim bu nedenle ünvanlardaki Türkçe karakterlerle ilgili bir sorun oldu ama yeni kayıt oluşturulduğunda program üzerinden 
--- böyle bir sorunla karışlaşmayacaksınız sadece queryde böyle bir problem yaşadım sonuç olarak sistem çalışıyor ama ünvanları
--- biraz farklı kaydediyor bu sorgu sonucu veri tabanımıza 
 INSERT INTO [Title] (Name)
 VALUES 
 ('Zabıt Katibi'),
@@ -118,8 +114,7 @@ VALUES
 ('Savcı'),
 ('Mühendis');
 
--- aynı şekilde adliye isimleri de biraz problemli düşecektir veri tabanına ama bunları sisteme manuel olarak eklediğinide
--- bu sorunun ortadan kalktığını görebilirsiniz
+
 INSERT INTO Courthouse (Name)
 VALUES
 ('Adana Adliyesi'),
